@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="920" viewBox="0 0 800 920">
+  <defs>
+    <linearGradient id="g" x2="1" y2="1"><stop stop-color="#323a5c"/><stop offset="1" stop-color="#111727"/></linearGradient>
+    <radialGradient id="l"><stop stop-color="#c7d7ff" stop-opacity=".3"/><stop offset="1" stop-color="#c7d7ff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="920" fill="url(#g)"/>
+  <circle cx="400" cy="300" r="350" fill="url(#l)"/>
+  <circle cx="400" cy="365" r="144" fill="#a5afcc" opacity=".84"/>
+  <path d="M96 920C104 672 235 583 398 582C568 581 702 680 715 920Z" fill="#a5afcc" opacity=".84"/>
+  <circle cx="400" cy="385" r="220" fill="none" stroke="#d5e4ff" stroke-opacity=".25" stroke-dasharray="8 20"/>
+  <text x="400" y="838" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" letter-spacing="6" fill="#f7f3e9">YOUR PHOTO HERE</text>
+  <text x="400" y="883" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#b8bfd6">assets/profile.jpg</text>
+</svg>

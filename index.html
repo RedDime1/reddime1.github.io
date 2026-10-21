@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Дмитрий Козлов — образование, навыки, опыт работы, проекты и три небольших достижения.">
+  <title>Дмитрий Козлов — обо мне</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar" id="top">
+    <div class="layout topbar-inner">
+      <a class="site-name" href="#top">Дмитрий Козлов</a>
+      <nav class="main-nav" aria-label="Навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#education">Образование</a>
+        <a href="#skills">Навыки</a>
+        <a href="#experience">Опыт</a>
+        <a href="#projects">Проекты</a>
+        <a href="#mds">ВКР</a>
+      </nav>
+      <a class="top-achievements" href="#achievements" aria-label="Посмотреть достижения">
+        <span id="header-stars" class="stars-inline" aria-hidden="true">☆☆☆</span>
+        <span id="header-progress">0 / 3</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="layout">
+    <div class="intro">
+      <h1>Дмитрий Козлов</h1>
+      <p>Магистрант НИУ ВШЭ — Санкт-Петербург, «Машинное обучение и анализ данных».</p>
+      <p class="intro-detail">Программирование · анализ данных · математика · электроника</p>
+    </div>
+
+    <section id="about" class="resume-section" aria-labelledby="about-title">
+      <h2 id="about-title">Обо мне</h2>
+      <div class="about-grid">
+        <div class="photo-card">
+          <div class="portrait-shell" id="portrait-shell">
+            <img src="assets/profile.jpg" alt="Фотография Дмитрия Козлова" id="portrait-image" onerror="this.onerror=null;this.src='assets/portrait-placeholder.svg';this.alt='Заглушка: добавьте фотографию assets/profile.jpg'">
+            <canvas id="scratch-canvas" aria-label="Серебристый защитный слой над фотографией"></canvas>
+            <div class="photo-unlocked" id="photo-unlocked" hidden>★ Личность раскрыта</div>
+          </div>
+          <div class="coin-row">
+            <p class="photo-instruction" id="scratch-instruction">Фотография под защитным слоем. Попробуйте стереть его монеткой.</p>
+            <button class="coin" id="scratch-coin" type="button" aria-label="Перетащите монетку на фотографию или нажимайте, чтобы стирать слой"><span>★</span></button>
+          </div>
+          <div class="scratch-progress" aria-label="Прогресс стирания"><div class="scratch-progress-fill" id="scratch-progress-fill"></div></div>
+        </div>
+        <div class="about-text">
+          <p>Окончил бакалавриат ИТМО по направлению «Прикладная математика и информатика». Сейчас обучаюсь в магистратуре НИУ ВШЭ по программе «Машинное обучение и анализ данных».</p>
+          <p>Занимаюсь программированием, обработкой данных и техническими задачами, включая работу с электроникой и микроконтроллерами. Интересуюсь машинным обучением, вычислительными методами и исследовательской работой.</p>
+          <dl class="facts">
+            <div><dt>Город</dt><dd>Санкт-Петербург</dd></div>
+            <div><dt>Дата рождения</dt><dd>16.01.2004</dd></div>
+            <div><dt>Направления</dt><dd>ML / Data Science, разработка ПО</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="resume-section" aria-labelledby="education-title">
+      <h2 id="education-title">Образование</h2>
+      <div class="record-list">
+        <article class="record">
+          <span class="record-type">Магистратура · 1-й курс</span>
+          <div><h3>НИУ ВШЭ — Санкт-Петербург</h3><p>«Машинное обучение и анализ данных»</p></div>
+        </article>
+        <article class="record">
+          <span class="record-type">Бакалавриат · окончен</span>
+          <div><h3>Университет ИТМО</h3><p>«Прикладная математика и информатика», программа «Компьютерные технологии и искусственный интеллект»</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="resume-section" aria-labelledby="skills-title">
+      <h2 id="skills-title">Навыки</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Языки и инструменты</h3>
+          <p>Python, C++, Java, Scala, Kotlin, SQL, MicroPython, Linux / Bash, Git / GitHub. Знаком с Clojure, HTML и PHP.</p>
+        </div>
+        <div class="skill-group">
+          <h3>Данные и ML</h3>
+          <p>Анализ и обработка данных, численные эксперименты, основы машинного обучения и компьютерного зрения.</p>
+        </div>
+        <div class="skill-group" id="algorithms">
+          <h3>Математика и алгоритмы</h3>
+          <p>Линейная алгебра, дискретная математика, теория вероятностей, статистика, алгоритмы и структуры данных, численные методы.</p>
+        </div>
+        <div class="skill-group">
+          <h3>Инженерные задачи</h3>
+          <p>Работа с датчиками и микроконтроллерами, программно-аппаратные системы, проектирование печатных плат.</p>
+        </div>
+      </div>
+      <div class="sequence-card">
+        <div class="sequence-head"><h3>Небольшая задача по алгоритмам</h3><span>★ Достижение</span></div>
+        <p class="sequence-title">Продолжите последовательность:</p>
+        <div class="sequence-line" aria-label="1, 6, 21, 107, неизвестное число"><span>1</span><i>→</i><span>6</span><i>→</i><span>21</span><i>→</i><span>107</span><i>→</i><strong>?</strong></div>
+        <form id="sequence-form" class="sequence-form">
+          <label for="sequence-answer">Следующее число</label>
+          <div class="sequence-input-row"><input id="sequence-answer" name="answer" type="text" autocomplete="off" inputmode="numeric" placeholder="Введите число" aria-describedby="sequence-feedback"><button class="btn btn-primary" type="submit">Проверить</button></div>
+        </form>
+        <p class="sequence-feedback" id="sequence-feedback" aria-live="polite">Это не арифметическая прогрессия.</p>
+        <button class="hint-text-button" id="beaver-hint" type="button">Математическая подсказка ↓</button>
+        <p class="beaver-hint-answer" id="beaver-hint-answer" hidden>Вспомните функцию Busy Beaver: S(n) — максимум шагов до остановки машины Тьюринга с n состояниями и двумя символами.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="resume-section" aria-labelledby="experience-title">
+      <h2 id="experience-title">Опыт работы</h2>
+      <div class="record-list">
+        <article class="record">
+          <span class="record-type">Текущая работа</span>
+          <div>
+            <h3>Техник</h3>
+            <ul class="compact-list">
+              <li>Моделирование технических и физических процессов; обработка экспериментальных данных.</li>
+              <li>Работа с датчиками, микроконтроллерами и программно-аппаратными системами.</li>
+              <li>Программирование на Python и MicroPython, изучение технической документации.</li>
+              <li>Проектирование печатных плат, задачи в области сетей и серверов.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="resume-section" aria-labelledby="projects-title">
+      <h2 id="projects-title">Проекты</h2>
+      <div class="project-list">
+        <article class="project-item">
+          <div><h3>Geometry Selector</h3><p>Исследовательский инструмент для выбора геометрии представления данных по матрице попарных расстояний с использованием спектральных характеристик.</p></div>
+          <span>Python · математика · ВКР</span>
+        </article>
+        <article class="project-item">
+          <div><h3>Gerber to G-code</h3><p>Преобразование Gerber-файлов в траектории фрезерования и G-code: геометрические операции, оптимизация порядка обхода, SVG-предпросмотр.</p></div>
+          <span>Python · Shapely · PCB</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="mds" class="resume-section" aria-labelledby="mds-title">
+      <h2 id="mds-title">Выпускная квалификационная работа</h2>
+      <h3 class="thesis-title">«Исследование метрических пространств для многомерного анализа больших данных»</h3>
+      <p class="thesis-description">Исследовал выбор подходящей геометрии представления данных по матрице попарных расстояний. Рассматривал евклидовы, сферические и гиперболические вложения, спектральные критерии и численные эксперименты. В рамках работы разработал Geometry Selector.</p>
+      <div class="mds-demo">
+        <div class="demo-title">
+          <div><h3>Попробовать MDS</h3><p>Пример с 20 синтетическими объектами и 8 признаками. Метод отображает многомерные данные в двумерном пространстве.</p></div>
+          <span>Интерактивная демонстрация</span>
+        </div>
+        <div class="lab-body">
+          <div class="lab-data-panel">
+            <div class="panel-heading"><h4>Исходные данные</h4><span class="panel-counter">20 × 8</span></div>
+            <div class="data-table-wrap"><table id="data-table" aria-label="20 объектов с восемью числовыми признаками"><thead><tr><th>№</th><th>F1</th><th>F2</th><th>F3</th><th>F4</th><th>F5</th><th>F6</th><th>F7</th><th>F8</th></tr></thead><tbody id="data-table-body"></tbody></table></div>
+            <button type="button" class="btn btn-primary btn-wide" id="run-mds">Вычислить MDS</button>
+            <div class="lab-result" id="mds-result" aria-live="polite">Нажмите кнопку, чтобы построить двумерное представление данных.</div>
+          </div>
+          <div class="lab-chart-panel">
+            <div class="panel-heading"><h4>Двумерная проекция</h4><span class="live-indicator">X / Y</span></div>
+            <div class="chart-wrap"><canvas id="mds-chart" aria-label="Координатная плоскость MDS. Можно перемещать и масштабировать." tabindex="0"></canvas><div class="chart-overlay" id="chart-overlay">Сначала вычислите MDS</div></div>
+            <div class="chart-info"><span id="chart-center">Центр: (0; 0)</span><span id="chart-zoom">Масштаб: 1×</span></div>
+            <form class="coordinate-form" id="coordinate-form">
+              <div class="coordinate-title">Перейти к координатам:</div>
+              <label>X <input id="coordinate-x" name="x" type="number" step="any" value="0" inputmode="decimal" aria-label="Координата X"></label>
+              <label>Y <input id="coordinate-y" name="y" type="number" step="any" value="0" inputmode="decimal" aria-label="Координата Y"></label>
+              <button type="submit" class="btn btn-compact" id="coordinate-go" disabled>Перейти</button>
+              <button type="button" class="reset-view" id="reset-view" disabled aria-label="Вернуться к MDS-точкам">⌖</button>
+            </form>
+            <p class="chart-help">Перетаскивайте график мышью или пальцем; масштабируйте колёсиком или кнопками <button type="button" class="mini-inline-button" id="zoom-out" disabled>−</button> <button type="button" class="mini-inline-button" id="zoom-in" disabled>+</button>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="resume-section achievements-section" aria-labelledby="achievements-title">
+      <h2 id="achievements-title">Достижения на сайте</h2>
+      <p class="section-lead">Три дополнительные звезды можно получить за исследование страницы. Прогресс сохраняется в этом браузере.</p>
+      <div class="achievements-summary">
+        <div><strong id="achievement-number">0 <small>/ 3</small></strong><span>звёзд открыто</span></div>
+        <div class="progress-track" aria-label="Прогресс достижений"><div id="achievement-progress-fill"></div></div>
+        <button type="button" class="reset-progress" id="reset-progress">Сбросить прогресс</button>
+      </div>
+      <div class="achievement-grid">
+        <article class="achievement-item" id="achievement-photo"><div class="achievement-icon">★</div><div class="achievement-content"><h3>Скрытая личность</h3><p>Сотрите серый слой с фотографии монеткой.</p><span class="achievement-status">Не получено</span></div></article>
+        <article class="achievement-item" id="achievement-space"><div class="achievement-icon">★</div><div class="achievement-content"><h3>Астролог-аналитик</h3><p>Найдите звезду за пределами привычных координат.</p><span class="achievement-status">Не получено</span></div></article>
+        <article class="achievement-item" id="achievement-beaver"><div class="achievement-icon">★</div><div class="achievement-content"><h3>Укротитель бобров</h3><p>Продолжите последовательность из раздела навыков.</p><span class="achievement-status">Не получено</span></div></article>
+      </div>
+      <div class="hints-box">
+        <div class="hints-head"><h3>Подсказки к достижениям</h3><span>Подглядывать разрешается</span></div>
+        <div class="hints-grid">
+          <div class="hint-group"><h4>01. Скрытая личность</h4><p>Монетка расположена прямо под фотографией. Перетащите её на изображение.</p></div>
+          <div class="hint-group"><h4>02. Астролог-аналитик</h4><details><summary>Ненавязчивая подсказка</summary><p>Иногда для поиска звёзд полезнее дата рождения, чем данные наблюдений. И какой сейчас год?</p></details><details><summary>Очевидная подсказка</summary><p>Постройте MDS, а затем переместитесь к координатам <strong>X = 2004, Y = 2026</strong>.</p></details></div>
+          <div class="hint-group"><h4>03. Укротитель бобров</h4><details><summary>Математическая подсказка</summary><p>Это значения S(1), S(2), S(3), S(4) функции Busy Beaver.</p></details><details><summary>Очевидная подсказка</summary><p>S(5) = <strong>47 176 870</strong>.</p></details></div>
+        </div>
+      </div>
+      <div class="final-unlock" id="final-unlock" hidden><span>★★★</span><div><h3>Все три достижения открыты!</h3><p>Портфолио изучено на 100%. Формальная часть резюме от этого не изменилась, зато звёзды красивые.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="layout footer-inner"><span>Дмитрий Козлов · <span id="footer-year">2026</span></span><a href="#top">Наверх ↑</a></div></footer>
+  <div class="toast" id="achievement-toast" role="status" aria-live="polite" aria-atomic="true"><span>★</span><div><small>Новое достижение</small><strong id="toast-title">Звезда получена</strong></div></div>
+</body>
+</html>
